@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Актуализация_Задач(Objects)</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Актуализация_Задач.Проект">
+            <summary>
+            Проект.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Проект.НазваниеПроекта">
+            <summary>
+            НазваниеПроекта.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Проект.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Проект.Views.ПроектE">
+            <summary>
+            "ПроектE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Проект.Views.ПроектL">
+            <summary>
+            "ПроектL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Исполнитель">
+            <summary>
+            Исполнитель.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Исполнитель.ФИО">
+            <summary>
+            ФИО.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Исполнитель.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Исполнитель.Views.ИсполнительE">
+            <summary>
+            "ИсполнительE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Исполнитель.Views.ИсполнительL">
+            <summary>
+            "ИсполнительL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Задача">
+            <summary>
+            Задача.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.НазваниеТемыНаФоруме">
+            <summary>
+            НазваниеТемыНаФоруме.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.СсылкаНаТему">
+            <summary>
+            СсылкаНаТему.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.НомерЗадачиВTfs">
+            <summary>
+            НомерЗадачиВTfs.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.СсылкаНаЗадачуВTfs">
+            <summary>
+            СсылкаНаЗадачуВTfs.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Приоритет">
+            <summary>
+            Приоритет.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Комментарий">
+            <summary>
+            Комментарий.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.ВыполнитьК">
+            <summary>
+            ВыполнитьК.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Статус">
+            <summary>
+            Статус.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.ВИтерации">
+            <summary>
+            ВИтерации.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Поддержка">
+            <summary>
+            Поддержка.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Исполнитель">
+            <summary>
+            Задача.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Проект">
+            <summary>
+            Задача.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Задача.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Views.ЗадачаE">
+            <summary>
+            "ЗадачаE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Views.ЗадачаL">
+            <summary>
+            "ЗадачаL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Views.ЗадачаПоддержкиL">
+            <summary>
+            "ЗадачаПоддержкиL" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Задача.Views.ЗадачаРазвитияL">
+            <summary>
+            "ЗадачаРазвитияL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Итерация">
+            <summary>
+            Итерация.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.ДатаНачала">
+            <summary>
+            ДатаНачала.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.ДатаОкончания">
+            <summary>
+            ДатаОкончания.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.ЧислоСозданныхТемНаФоруме">
+            <summary>
+            ЧислоСозданныхТемНаФоруме.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.ЧислоСозданныхЗадач">
+            <summary>
+            ЧислоСозданныхЗадач.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.ЧислоТемБезИсправлений">
+            <summary>
+            ЧислоТемБезИсправлений.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.Дежурный">
+            <summary>
+            Итерация.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.Итерация.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.Views.ИтерацияE">
+            <summary>
+            "ИтерацияE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Актуализация_Задач.Итерация.Views.ИтерацияL">
+            <summary>
+            "ИтерацияL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Актуализация_Задач.СтатусЗадачи">
+            <summary>
+            Статус задачи.
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.Выполнено">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.Проверка">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.ВПроцессеОбсуждения">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.ЖдутУточнения">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.Отложено">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.Форум">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.Актуализация_Задач.СтатусЗадачи.ВнешнийФорум">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
