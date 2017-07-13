@@ -46,10 +46,15 @@ namespace IIS.Актуализация_Задач
         {
             if ((DataObject != null) && (DataObject.Поддержка == true))
             {
-              }
+                wb.SetReadonlyToControl(ctrlПроект, true);
+                wb.SetReadonlyToControl(ctrlВИтерации, true);
+            }
 
             Page.Validate();
+
         }
+
+
 
         /// <summary>
         /// Вызывается самым последним в Page_Load.
