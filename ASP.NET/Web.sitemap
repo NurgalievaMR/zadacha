@@ -20,7 +20,7 @@
         <siteMapNode title="В процессе обсуждения" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?status=process" />
         <siteMapNode title="Ждут уточнения" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?status=wait" />
         <siteMapNode title="Отложено" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?status=otl" />
-        <siteMapNode title="Форум" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?=status=forum" />
+        <siteMapNode title="Форум" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?status=forum" />
         <siteMapNode title="Внешний форум" description="" url="~/forms/Zadacha/ZadachaPodderzhkiL.aspx?status=vforum" />
       </siteMapNode>
       <siteMapNode title="Все объекты" roles="*">

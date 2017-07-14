@@ -38,43 +38,64 @@ namespace IIS.Актуализация_Задач
            WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
            new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true);
 
-           string a = Request.QueryString["status"]; 
-
+           string a = Request.QueryString["status"];
+          
             switch (a)
            {
                case "done":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Выполнено));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Выполнено)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "test":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Проверка));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Проверка)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "process":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ВПроцессеОбсуждения));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ВПроцессеОбсуждения)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "wait":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ЖдутУточнения));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ЖдутУточнения)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "otl":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Отложено));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Отложено)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "forum":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Форум));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Форум)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
 
                case "vforum":
-                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcEQ,
-       new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ВнешнийФорум));
+                   WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
+                langdef.GetFunction(
+        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ВнешнийФорум)),
+                langdef.GetFunction(
+                langdef.funcEQ, new VariableDef(langdef.BoolType, Information.ExtractPropertyName<Задача>(x => x.Поддержка)), true));
                    break;
            }
         }

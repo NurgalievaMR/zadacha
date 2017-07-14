@@ -38,15 +38,10 @@ namespace IIS.Актуализация_Задач
 
             WebObjectListView1.LimitFunction = langdef.GetFunction(langdef.funcAND,
                 langdef.GetFunction(
-        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ВнешнийФорум)),
+        langdef.funcNEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Выполнено)),
                 langdef.GetFunction(
-        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Форум)),
-                langdef.GetFunction(
-        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)),EnumCaption.GetCaptionFor(СтатусЗадачи.ВПроцессеОбсуждения)), 
-                langdef.GetFunction(
-        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Проверка)),
-        langdef.GetFunction(
-        langdef.funcEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.ЖдутУточнения)));
+                langdef.funcNEQ, new VariableDef(langdef.StringType, Information.ExtractPropertyName<Задача>(x => x.Статус)), EnumCaption.GetCaptionFor(СтатусЗадачи.Отложено)));
+                
         }
         
         /// <summary>
